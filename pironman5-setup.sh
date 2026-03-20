@@ -221,7 +221,7 @@ read -r -p "Reboot now to activate pironman5? (yes/no): " REBOOT_ANSWER
 if [[ "$REBOOT_ANSWER" =~ ^[Yy][Ee][Ss]$|^[Yy]$ ]]; then
     print_info "Rebooting in 5 seconds... (Ctrl+C to cancel)"
     sleep 5
-    reboot
+    sudo reboot now
 else
     print_warning "Reboot skipped. Run 'sudo reboot' when ready to activate."
 fi
